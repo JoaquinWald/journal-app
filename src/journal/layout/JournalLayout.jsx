@@ -16,7 +16,7 @@ export const JournalLayout = ({ children }) => {
         component="main"
         sx={{ flexGrow: 1, p: 3 }}
       >
-        {/* ToolBar */}
+
         <Toolbar />
 
         {children}
