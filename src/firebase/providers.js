@@ -14,7 +14,6 @@ export const signInWithGoogle = async () => {
 
     return {
       ok: true,
-      //user info
       displayName, email, photoURL, uid
     }
 
@@ -46,7 +45,6 @@ export const registerUserWithEmailPassword = async ({ email, password, displayNa
     }
 
   } catch (error) {
-    // console.log(error)
     return { ok: false, errorMessage: error.message }
   }
 
