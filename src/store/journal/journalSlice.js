@@ -48,8 +48,15 @@ export const journalSlice = createSlice({
       state.messageSaved = `[${action.payload.title}] actualizada correctamente`;
 
     },
+    // setPhotosToActiveNote: (state, action) => {
+    //   state.active.imageUrl = [...state.active.imageUrl, ...action.payload];
+    //   state.isSaving = false;
+    // },
     setPhotosToActiveNote: (state, action) => {
-      state.active.imageUrl = [...state.active.imageUrl, ...action.payload];
+      state.active = {
+        ...state.active,
+        imageUrl: [...state.active.imageUrl, ...action.payload]
+      };
       state.isSaving = false;
     },
     clearNotesLogout: (state) => {

@@ -56,7 +56,7 @@ export const NoteView = () => {
       direction='row'
       justifyContent='space-between'
       alignItems='center'
-      sx={{ md: 1 }}
+      sx={{ md: 1, p: 2 }}
       className="animate__animated animate__fadeIn animate__faster">
       <Grid>
         <Typography fontSize={39} fontWeight='light'>{dateString}</Typography>
